@@ -1,52 +1,81 @@
-     <nav>
-        <a href="/">
-            <img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo">
-        </a>
-        <div class="nav-country">
+<nav>
+    <a href="/">
+        <img src="./assets/amazon_logo.png" width="100" [style.margin]="'5px 0 0 20px'" alt="Amazon Logo">
+    </a>
+    <div class="nav-country">
 
-            <img src="./assets/location_icon.png" height="20" alt="United States Flag">
-            <div>
-                <p>Deliver to</p>
-                <p [style.fontWeight]="'bold'">United States</p>
-            </div>
-        </div>
-            <div class="nav-search">
-                <div class="nav-search-gategory">
-                    <p>All</p>
-                    <img src="./assets/dropdown_icon.png" height="12" alt="">
-                </div>
-                <input type="text" class="nav-search-input" placeholder="Search Amazon">
-                <img src="./assets/search_icon.png" class="nav-search-icon" alt="Search Icon">
-            </div>
-
-            <div class="nav-language">
-                <img src="./assets/us_flag.png" width="20px" alt="Globe Icon">
-                <p>EN</p>
-                <img src="./assets/dropdown_icon.png" width="12px" alt="">
-
-            </div>
-
-            <div class="nav-text" id="account-menu">
-                <p>Hello, Sign in</p>
-                <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""> </h1>
-
-            </div>
-           
-            <a href="./cart.html" class="nav-cart">
-                <img src="./assets/cart_icon.png" width="35px">
-            </a>
-
-        </nav>
-
-        <!--------------------------------------->
-    <div class="nav-bottom">
+        <img src="./assets/location_icon.png" height="20" alt="United States Flag">
         <div>
-            <img src="./assets/menu_icon.png" width="25px" alt="Menu Icon">
-            <p>All</p>
+            <p>Deliver to</p>
+            <p [style.fontWeight]="'bold'">United States</p>
         </div>
-        <p>Today's Deals</p>
-        <p>Customer Service</p>
-        <p>Gift Cards</p>
-        <p>Registry</p>
-        <p>Sell</p>
     </div>
+    <div class="nav-search">
+        <div class="nav-search-gategory">
+            <p>All</p>
+            <img src="./assets/dropdown_icon.png" height="12" alt="">
+        </div>
+        <input type="text" class="nav-search-input" placeholder="Search Amazon">
+        <img src="./assets/search_icon.png" class="nav-search-icon" alt="Search Icon">
+    </div>
+
+    <div class="nav-language">
+        <img src="./assets/us_flag.png" width="20px" alt="Globe Icon">
+        <p>EN</p>
+        <img src="./assets/dropdown_icon.png" width="12px" alt="">
+
+    </div>
+
+    <div class="nav-text" id="account-menu">
+        <p>Hello, Sign in</p>
+        <h1>
+            Account & Lists
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+        </h1>
+
+        <!-- Dropdown escondido -->
+        <div class="dropdown-menu">
+            <button class="sign-in-btn" (click)="navigateToLogin()">Sign in</button>
+            <p class="new-customer">New customer? <a href="#">Start here.</a></p>
+
+            <div class="menu-columns">
+                <div>
+                    <h3 [style.fontWeight]="'bold'">Your Lists</h3>
+                    <ul>
+                        <li>Create a List</li>
+                        <li>Find a List or Registry</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 [style.fontWeight]="'bold'">Your Account</h3>
+                    <ul>
+                        <li>Account</li>
+                        <li>Orders</li>
+                        <li>Recommendations</li>
+                        <li>Browsing History</li>
+                        <li>Watchlist</li>
+                        <li>Prime Membership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="./cart.html" class="nav-cart">
+        <img src="./assets/cart_icon.png" width="35px">
+    </a>
+
+</nav>
+
+<!--------------------------------------->
+<div class="nav-bottom">
+    <div>
+        <img src="./assets/menu_icon.png" width="25px" alt="Menu Icon">
+        <p>All</p>
+    </div>
+    <p>Today's Deals</p>
+    <p>Customer Service</p>
+    <p>Gift Cards</p>
+    <p>Registry</p>
+    <p>Sell</p>
+</div>
