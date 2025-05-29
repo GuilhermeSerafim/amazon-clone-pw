@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,10 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  constructor(private router: Router) { }
+  user: string = '';
+  constructor(private router: Router) {
+    this.user = localStorage.getItem('user') || '';
+  }
   navigateToLogin() {
     this.router.navigate(['/login'])
   }

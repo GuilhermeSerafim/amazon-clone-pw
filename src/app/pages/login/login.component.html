@@ -6,7 +6,10 @@
 
         <input type="text" placeholder="Email or mobile phone number" [(ngModel)]="user" />
         <input type="text" placeholder="Password" [(ngModel)]="password" />
-        <button class="btn-continue">Login</button>
+        <button class="btn-continue" (click)="onLogin()">Login</button>
+        @if(errorMsg) {
+        <p class="error">{{ errorMsg }}</p>
+        }
 
         <p class="legal-links">
             By continuing, you agree to Amazon's
