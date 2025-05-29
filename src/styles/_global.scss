@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+* {
+    // Com border-box, bordas e padding são incluídos dentro do width e height, evitando bugs de layout.
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -7,4 +12,12 @@ p {
     font-family: 'Open Sans', sans-serif !important;
 }
 
-html, body { height: 100%; font-family: 'Open Sans', sans-serif !important; }
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+    background: rgb(218, 218, 218);
+}
