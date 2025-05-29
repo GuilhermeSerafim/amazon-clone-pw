@@ -6,8 +6,14 @@
     margin: 20px 30px;
 }
 
+h3 {
+    font-weight: bold;
+}
 
-
+#summer {
+    cursor: pointer;
+    text-decoration: underline;
+}
 .box-col {
     display: flex;
     flex-direction: column;

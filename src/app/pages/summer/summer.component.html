@@ -1,0 +1,42 @@
+<app-header />
+<div class="verao-container">
+    <h2>Summer Essentials</h2>
+
+    <div class="grid">
+        @for (item of itensDeVerao; track item.title) {
+        <div class="card">
+            <img [src]="item.img" alt="Imagem do produto" />
+
+            @if (item.colors) {
+            @if (item.colors.length > 0) {
+            <div class="colors">
+                @for (color of item.colors; track $index) {
+                <span [style.background]="color"></span>
+                }
+            </div>
+            }}
+
+            <p class="title">{{ item.title }}</p>
+            <p class="stars">⭐ {{ item.stars }} <span>({{ item.reviews }})</span></p>
+
+            <p class="price">
+                ${{ item.price }}
+                @if (item.oldPrice) {
+                <span class="old-price">List: ${{ item.oldPrice }}</span>
+                }
+            </p>
+
+            <p class="delivery">{{ item.delivery }}</p>
+
+            @if (item.deal) {
+            <span class="deal">Limited time deal</span>
+            }
+
+            <button class="cart-btn mat-mdc-button" color="primary">
+                <mat-icon>shopping_cart</mat-icon>
+            </button>
+        </div>
+        }
+    </div>
+</div>
+<app-footer />
