@@ -1,19 +1,31 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartService } from '../../services/cart.service'; 
+import { MatIcon } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone: true,
+  imports: [MatIcon, MatBadgeModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   user: string = '';
-  constructor(private router: Router) {
+  qtdItensCarrinho: number = 0;
+
+  constructor(private router: Router, private cartService: CartService) {
     this.user = localStorage.getItem('user') || '';
-  }
-  navigateToLogin() {
-    this.router.navigate(['/login'])
+
+    this.cartService.getTotalItemsInCart().subscribe({
+      next: (total) => this.qtdItensCarrinho = total.totalItemsInCart,
+      error: () => this.qtdItensCarrinho = 0
+    });
   }
 
+  navigateToLogin() {
+    // this.router.navigate(['/login']);
+    console.log(this.qtdItensCarrinho)
+  }
 }

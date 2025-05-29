@@ -189,12 +189,16 @@ nav {
 }
 
 .sign-in-btn:hover {
-  background: #e6b800;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: #e6b800;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .new-customer {
     font-size: 12px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.mat-icon {
+    color: white;
 }

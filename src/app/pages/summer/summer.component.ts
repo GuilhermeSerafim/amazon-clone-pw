@@ -5,7 +5,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { CartItem } from '../../interfaces/cart-item';
+import { CartService } from '../../services/cart.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-summer',
@@ -14,7 +16,7 @@ import { MatInputModule } from '@angular/material/input';
   styleUrl: './summer.component.scss'
 })
 export class SummerComponent {
-  itensDeVerao = [
+  itensDeVerao: CartItem[] = [
     {
       img: '/assets/verao/1.jpg',
       title: 'Weber Master-Touch 22"',
@@ -23,6 +25,8 @@ export class SummerComponent {
       price: 309,
       delivery: 'FREE delivery Tue, Jun 3',
       colors: ['#9fd242', '#000', '#ccc'],
+      id: '1',
+      disabled: false,
     },
     {
       img: '/assets/verao/2.jpg',
@@ -32,6 +36,8 @@ export class SummerComponent {
       price: 189.99,
       delivery: 'FREE delivery Jun 4 - 6',
       colors: [],
+      id: '2',
+      disabled: false,
     },
     {
       img: '/assets/verao/3.jpg',
@@ -42,6 +48,8 @@ export class SummerComponent {
       oldPrice: 45.99,
       delivery: '$5 delivery Jun 10 - 20',
       colors: ['#1d293d', '#4a5985', '#cfd2da'],
+      id: '3',
+      disabled: false,
     },
     {
       img: '/assets/verao/4.jpg',
@@ -52,6 +60,8 @@ export class SummerComponent {
       oldPrice: 450,
       delivery: 'FREE delivery Jun 3 - 6',
       colors: ['#9fd242', '#3693c9'],
+      id: '4',
+      disabled: false,
     },
     {
       img: '/assets/verao/5.jpg',
@@ -61,13 +71,33 @@ export class SummerComponent {
       price: 73.89,
       oldPrice: 82.99,
       delivery: 'FREE delivery Thu, Jun 5',
-      deal: true
+      deal: true,
+      id: '5',
+      disabled: false,
     }
   ];
   searchText: string = '';
+
+  constructor(private cartService: CartService, private snackBar: MatSnackBar) { }
+
   get itensFiltrados() {
     return this.itensDeVerao.filter(item =>
-      item.title.toLowerCase().includes(this.searchText.toLowerCase())
+      item.title!.toLowerCase().includes(this.searchText.toLowerCase())
     );
   }
+
+  addCart(cartItem: CartItem) {
+    this.cartService.addItemToCart(cartItem)
+      .subscribe({
+        next: () => {
+          this.snackBar.open("Item adicionado ao carrinho", '', {
+            duration: 3000
+          });
+        },
+        error: err => {
+          console.error('Falha ao adicionar item no carrinho', err);
+        }
+      })
+  }
+
 }

@@ -18,5 +18,47 @@
       "email": "chris@example.com",
       "password": "777"
     }
-  ]
+  ],
+  "itemsCart": [
+    {
+      "id": "2",
+      "img": "/assets/verao/2.jpg",
+      "title": "3-Piece Patio Set",
+      "stars": 4.5,
+      "reviews": 1041,
+      "price": 189.99,
+      "delivery": "FREE delivery Jun 4 - 6",
+      "colors": [],
+      "disabled": false
+    },
+    {
+      "id": "2",
+      "img": "/assets/verao/2.jpg",
+      "title": "3-Piece Patio Set",
+      "stars": 4.5,
+      "reviews": 1041,
+      "price": 189.99,
+      "delivery": "FREE delivery Jun 4 - 6",
+      "colors": [],
+      "disabled": false
+    },
+    {
+      "id": "4",
+      "img": "/assets/verao/4.jpg",
+      "title": "YETI Haul Wheeled Cooler",
+      "stars": 4.8,
+      "reviews": 3931,
+      "price": 360,
+      "oldPrice": 450,
+      "delivery": "FREE delivery Jun 3 - 6",
+      "colors": [
+        "#9fd242",
+        "#3693c9"
+      ],
+      "disabled": false
+    }
+  ],
+  "totalItemsInCart": {
+    "totalItemsInCart": 3
+  }
 }
