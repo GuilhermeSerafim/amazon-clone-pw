@@ -136,12 +136,35 @@
     gap: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    mat-icon {
-      font-size: 18px;
-    }
 
     &:hover {
       background-color: #f7ca00;
     }
   }
 }
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  h2 {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  .search-field {
+    width: 250px;
+  }
+}
+
+  mat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px; // altura padrão do ícone
+    width: 24px;
+    font-size: 20px;
+    color: #555;
+  }
