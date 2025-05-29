@@ -1,0 +1,13 @@
+<div class="header-slider">
+    <a href="#" class="control-prev" (click)="prevSlide()">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+    </a>
+    <a href="#" class="control-next" (click)="nextSlide()">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+    </a>
+    <ul>
+        @for(img of images; let i = $index; track $index){
+        <img [src]="img" [style.display]="i === currentIndex ? 'block' : 'none'" alt="banner" class="header-img">
+        }
+    </ul>
+</div>
