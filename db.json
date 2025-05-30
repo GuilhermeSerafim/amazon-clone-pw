@@ -19,8 +19,39 @@
       "password": "777"
     }
   ],
-  "itemsCart": [],
+  "itemsCart": [
+    {
+      "id": "1",
+      "img": "/assets/verao/1.jpg",
+      "title": "Weber Master-Touch 22\"",
+      "stars": 4.5,
+      "reviews": 93,
+      "price": 309,
+      "delivery": "FREE delivery Tue, Jun 3",
+      "colors": [
+        "#9fd242",
+        "#000",
+        "#ccc"
+      ],
+      "disabled": true
+    },
+    {
+      "id": "11",
+      "img": "/assets/verao/11.jpg",
+      "title": "Owala FreeSip Bottle",
+      "stars": 4.9,
+      "reviews": 1934,
+      "price": 24.95,
+      "delivery": "FREE delivery Tue, Jun 4",
+      "colors": [
+        "#00bcd4",
+        "#f44336",
+        "#ffc107"
+      ],
+      "disabled": true
+    }
+  ],
   "totalItemsInCart": {
-    "totalItemsInCart": 0
+    "totalItemsInCart": 2
   }
 }
