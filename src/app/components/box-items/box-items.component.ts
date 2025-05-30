@@ -10,7 +10,9 @@ import { Router } from '@angular/router';
 export class BoxItemsComponent {
   constructor(private router: Router) { }
   navigateToPageSummer() {
-    this.router.navigate(['/summer']);
+    this.router.navigate(['/summer']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
 }
