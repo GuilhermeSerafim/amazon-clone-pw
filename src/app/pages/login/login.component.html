@@ -5,7 +5,7 @@
         <h1>Sign-In</h1>
 
         <input type="text" placeholder="Email or mobile phone number" [(ngModel)]="user" />
-        <input type="text" placeholder="Password" [(ngModel)]="password" />
+        <input type="password" placeholder="Password" [(ngModel)]="password" />
         <button class="btn-continue" (click)="onLogin()">Login</button>
         @if(errorMsg) {
         <p class="error">{{ errorMsg }}</p>
