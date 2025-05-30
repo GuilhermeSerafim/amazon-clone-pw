@@ -1,0 +1,129 @@
+.cart-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  gap: 20px;
+
+  img {
+    width: 150px;
+    object-fit: contain;
+  }
+
+  .details {
+    flex: 1;
+
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .status,
+    .prime,
+    .delivery {
+      font-size: 14px;
+      color: #555;
+      margin: 2px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #c45500;
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 2px;
+      margin: 5px 0;
+    }
+
+    .qty-control {
+      display: inline-flex;
+      align-items: center;
+      border: 2px solid #ffd814;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin: 10px 0;
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      span {
+        margin: 0 8px;
+        font-weight: bold;
+        min-width: 20px;
+        text-align: center;
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+
+      .action-link {
+        font-size: 13px;
+        color: #007185;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 120px;
+    text-align: right;
+  }
+}
+
+.summary {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  text-align: right;
+
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .total {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .checkout-btn {
+    margin-top: 15px;
+    background: #ffd814;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+
+    &:hover {
+      background: #f7ca00;
+    }
+  }
+}

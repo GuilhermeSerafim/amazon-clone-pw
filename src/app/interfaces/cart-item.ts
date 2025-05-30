@@ -4,7 +4,7 @@ export interface CartItem {
     title: string,
     stars: number | undefined,
     reviews: number | undefined,
-    price: number | undefined,
+    price: number,
     oldPrice?: number | undefined,
     delivery: string | undefined,
     colors?: string[] | undefined,

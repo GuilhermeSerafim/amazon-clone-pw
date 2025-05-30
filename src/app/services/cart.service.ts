@@ -46,4 +46,8 @@ export class CartService {
     });
   }
 
+  getCartItems(): Observable<CartItem[]> {
+    return this.http.get<CartItem[]>(`${this._apiUrl}/itemsCart`);
+  }
+
 }
