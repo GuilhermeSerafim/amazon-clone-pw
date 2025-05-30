@@ -24,7 +24,10 @@ export class HeaderComponent {
   }
 
   navigateToLogin() {
-    // this.router.navigate(['/login']);
-    console.log(this.qtdItensCarrinho)
+    this.router.navigate(['/login']);
+  }
+
+  navigateToCart() {
+    this.router.navigate(['/cart']);
   }
 }

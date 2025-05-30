@@ -21,6 +21,21 @@
   ],
   "itemsCart": [
     {
+      "id": "1",
+      "img": "/assets/verao/1.jpg",
+      "title": "Weber Master-Touch 22\"",
+      "stars": 4.5,
+      "reviews": 93,
+      "price": 309,
+      "delivery": "FREE delivery Tue, Jun 3",
+      "colors": [
+        "#9fd242",
+        "#000",
+        "#ccc"
+      ],
+      "disabled": true
+    },
+    {
       "id": "2",
       "img": "/assets/verao/2.jpg",
       "title": "3-Piece Patio Set",
@@ -33,6 +48,6 @@
     }
   ],
   "totalItemsInCart": {
-    "totalItemsInCart": 1
+    "totalItemsInCart": 2
   }
 }

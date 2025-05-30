@@ -1,43 +1,43 @@
-    <app-header/>
+<app-header />
 <div class="cart-container">
   <h2>Shopping Cart</h2>
 
   @for (item of cartItems; track item.id) {
-    <div class="cart-item">
-      <img [src]="item.img" alt="{{ item.title }}" />
+  <div class="cart-item">
+    <img [src]="item.img" alt="{{ item.title }}" />
 
-      <div class="details">
-        <p class="title">{{ item.title }}</p>
+    <div class="details">
+      <p class="title">{{ item.title }}</p>
 
-        @if(item.deal) {
-          <span class="badge">1º mais vendido</span>
-        }
+      @if(item.deal) {
+      <span class="badge">1º mais vendido</span>
+      }
 
-        <p class="status">Em estoque</p>
-        <p class="prime">✔ prime</p>
-        <p class="delivery">Entrega GRÁTIS: <strong>{{ item.delivery }}</strong></p>
+      <p class="status">Em estoque</p>
+      <p class="prime">✔ prime</p>
+      <p class="delivery">Entrega GRÁTIS: <strong>{{ item.delivery }}</strong></p>
 
-        <div class="qty-control">
-          <button mat-icon-button (click)="decreaseQty(item)">
-            <mat-icon>remove</mat-icon>
-          </button>
-          <span>{{ item.quantity || 1 }}</span>
-          <button mat-icon-button (click)="increaseQty(item)">
-            <mat-icon>add</mat-icon>
-          </button>
-        </div>
-
-        <div class="actions">
-          <a href="#" class="action-link">Excluir</a>
-          <a href="#" class="action-link">Salvar para mais tarde</a>
-          <a href="#" class="action-link">Compartilhar</a>
-        </div>
+      <div class="qty-control">
+        <button mat-icon-button (click)="decreaseQty(item)">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <span>{{ item.quantity || 1 }}</span>
+        <button mat-icon-button (click)="increaseQty(item)">
+          <mat-icon>add</mat-icon>
+        </button>
       </div>
 
-      <div class="price">
-        R$ {{ item.price?.toFixed(2) }}
+      <div class="actions">
+        <a href="#" class="action-link">Excluir</a>
+        <a href="#" class="action-link">Salvar para mais tarde</a>
+        <a href="#" class="action-link">Compartilhar</a>
       </div>
     </div>
+
+    <div class="price">
+      R$ {{ item.price.toFixed(2) }}
+    </div>
+  </div>
   }
 
   <div class="summary">
@@ -47,4 +47,4 @@
   </div>
 </div>
 
-    <app-footer />
+<app-footer />

@@ -55,14 +55,13 @@ export class CartComponent {
   saveForLater(id: string) {
     // implementar save for later
   }
+increaseQty(item: CartItemWithQty) {
+  item.quantity++;
+}
 
-  increaseQty(item: any) {
-    item.qty = (item.qty || 1) + 1;
+decreaseQty(item: CartItemWithQty) {
+  if (item.quantity > 1) {
+    item.quantity--;
   }
-
-  decreaseQty(item: any) {
-    if ((item.qty || 1) > 1) {
-      item.qty--;
-    }
-  }
+}
 }
