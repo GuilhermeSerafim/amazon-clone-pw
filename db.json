@@ -1,19 +1,19 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Guiler",
       "email": "guiler@example.com",
       "password": "123"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Isa",
       "email": "isa@example.com",
       "password": "abc"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Chris",
       "email": "chris@example.com",
       "password": "777"
@@ -21,25 +21,15 @@
   ],
   "itemsCart": [
     {
-      "id": "2",
-      "img": "/assets/verao/2.jpg",
-      "title": "3-Piece Patio Set",
-      "stars": 4.5,
-      "reviews": 1041,
-      "price": 189.99,
-      "delivery": "FREE delivery Jun 4 - 6",
-      "colors": [],
-      "disabled": false
-    },
-    {
-      "id": "2",
-      "img": "/assets/verao/2.jpg",
-      "title": "3-Piece Patio Set",
-      "stars": 4.5,
-      "reviews": 1041,
-      "price": 189.99,
-      "delivery": "FREE delivery Jun 4 - 6",
-      "colors": [],
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
       "disabled": false
     },
     {
@@ -56,9 +46,199 @@
         "#3693c9"
       ],
       "disabled": false
+    },
+    {
+      "id": "3",
+      "img": "/assets/verao/3.jpg",
+      "title": "Outdoor Pillow Set",
+      "stars": 4.3,
+      "reviews": 591,
+      "price": 35.99,
+      "oldPrice": 45.99,
+      "delivery": "$5 delivery Jun 10 - 20",
+      "colors": [
+        "#1d293d",
+        "#4a5985",
+        "#cfd2da"
+      ],
+      "disabled": false
+    },
+    {
+      "id": "3",
+      "img": "/assets/verao/3.jpg",
+      "title": "Outdoor Pillow Set",
+      "stars": 4.3,
+      "reviews": 591,
+      "price": 35.99,
+      "oldPrice": 45.99,
+      "delivery": "$5 delivery Jun 10 - 20",
+      "colors": [
+        "#1d293d",
+        "#4a5985",
+        "#cfd2da"
+      ],
+      "disabled": false
+    },
+    {
+      "id": "3",
+      "img": "/assets/verao/3.jpg",
+      "title": "Outdoor Pillow Set",
+      "stars": 4.3,
+      "reviews": 591,
+      "price": 35.99,
+      "oldPrice": 45.99,
+      "delivery": "$5 delivery Jun 10 - 20",
+      "colors": [
+        "#1d293d",
+        "#4a5985",
+        "#cfd2da"
+      ],
+      "disabled": false
+    },
+    {
+      "id": "3",
+      "img": "/assets/verao/3.jpg",
+      "title": "Outdoor Pillow Set",
+      "stars": 4.3,
+      "reviews": 591,
+      "price": 35.99,
+      "oldPrice": 45.99,
+      "delivery": "$5 delivery Jun 10 - 20",
+      "colors": [
+        "#1d293d",
+        "#4a5985",
+        "#cfd2da"
+      ],
+      "disabled": false
+    },
+    {
+      "id": "3",
+      "img": "/assets/verao/3.jpg",
+      "title": "Outdoor Pillow Set",
+      "stars": 4.3,
+      "reviews": 591,
+      "price": 35.99,
+      "oldPrice": 45.99,
+      "delivery": "$5 delivery Jun 10 - 20",
+      "colors": [
+        "#1d293d",
+        "#4a5985",
+        "#cfd2da"
+      ],
+      "disabled": false
+    },
+    {
+      "id": "2",
+      "img": "/assets/verao/2.jpg",
+      "title": "3-Piece Patio Set",
+      "stars": 4.5,
+      "reviews": 1041,
+      "price": 189.99,
+      "delivery": "FREE delivery Jun 4 - 6",
+      "colors": [],
+      "disabled": false
+    },
+    {
+      "id": "1",
+      "img": "/assets/verao/1.jpg",
+      "title": "Weber Master-Touch 22\"",
+      "stars": 4.5,
+      "reviews": 93,
+      "price": 309,
+      "delivery": "FREE delivery Tue, Jun 3",
+      "colors": [
+        "#9fd242",
+        "#000",
+        "#ccc"
+      ],
+      "disabled": false
+    },
+    {
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
+      "disabled": false
+    },
+    {
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
+      "disabled": false
+    },
+    {
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
+      "disabled": false
+    },
+    {
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
+      "disabled": false
+    },
+    {
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
+      "disabled": false
+    },
+    {
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
+      "disabled": false
+    },
+    {
+      "id": "5",
+      "img": "/assets/verao/5.jpg",
+      "title": "VASAGLE Serving Cart",
+      "stars": 4.6,
+      "reviews": 3051,
+      "price": 73.89,
+      "oldPrice": 82.99,
+      "delivery": "FREE delivery Thu, Jun 5",
+      "deal": true,
+      "disabled": false
     }
   ],
   "totalItemsInCart": {
-    "totalItemsInCart": 3
+    "totalItemsInCart": 23
   }
 }
