@@ -8,10 +8,11 @@ import { MatInputModule } from '@angular/material/input';
 import { CartItem } from '../../interfaces/cart-item';
 import { CartService } from '../../services/cart.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-summer',
-  imports: [HeaderComponent, FooterComponent, MatIconModule, FormsModule, MatFormFieldModule, MatInputModule],
+  imports: [HeaderComponent, FooterComponent, MatIconModule, FormsModule, MatFormFieldModule, MatInputModule, CommonModule],
   templateUrl: './summer.component.html',
   styleUrl: './summer.component.scss'
 })
@@ -87,6 +88,7 @@ export class SummerComponent {
   }
 
   addCart(cartItem: CartItem) {
+    cartItem.disabled = true; // desabilita imediatamente ao clicar
     this.cartService.addItemToCart(cartItem)
       .subscribe({
         next: () => {
@@ -96,6 +98,7 @@ export class SummerComponent {
         },
         error: err => {
           console.error('Falha ao adicionar item no carrinho', err);
+          cartItem.disabled = false; // reabilita caso dê erro]
         }
       })
   }
