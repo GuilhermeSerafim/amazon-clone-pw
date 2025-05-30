@@ -50,4 +50,10 @@ export class CartService {
     return this.http.get<CartItem[]>(`${this._apiUrl}/itemsCart`);
   }
 
+  // cart.service.ts
+  deleteItem(id: string): Observable<void> {
+    return this.http.delete<void>(`${this._apiUrl}/itemsCart/${id}`);
+  }
+
+
 }

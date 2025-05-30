@@ -34,17 +34,6 @@
         "#ccc"
       ],
       "disabled": true
-    },
-    {
-      "id": "2",
-      "img": "/assets/verao/2.jpg",
-      "title": "3-Piece Patio Set",
-      "stars": 4.5,
-      "reviews": 1041,
-      "price": 189.99,
-      "delivery": "FREE delivery Jun 4 - 6",
-      "colors": [],
-      "disabled": true
     }
   ],
   "totalItemsInCart": {

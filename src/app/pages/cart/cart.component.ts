@@ -49,19 +49,19 @@ export class CartComponent {
   }
 
   deleteItem(id: string) {
-    // implementar remoção
+    this.cartService.deleteItem(id).subscribe(() => {
+      this.cartItems = this.cartItems.filter(item => item.id !== id);
+    });
   }
 
-  saveForLater(id: string) {
-    // implementar save for later
-  }
-increaseQty(item: CartItemWithQty) {
-  item.quantity++;
-}
 
-decreaseQty(item: CartItemWithQty) {
-  if (item.quantity > 1) {
-    item.quantity--;
+  increaseQty(item: CartItemWithQty) {
+    item.quantity++;
   }
-}
+
+  decreaseQty(item: CartItemWithQty) {
+    if (item.quantity > 1) {
+      item.quantity--;
+    }
+  }
 }
