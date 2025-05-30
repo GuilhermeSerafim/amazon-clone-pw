@@ -50,9 +50,21 @@ export class CartService {
     return this.http.get<CartItem[]>(`${this._apiUrl}/itemsCart`);
   }
 
-  // cart.service.ts
   deleteItem(id: string): Observable<void> {
-    return this.http.delete<void>(`${this._apiUrl}/itemsCart/${id}`);
+    return this.http.delete<void>(`${this._apiUrl}/itemsCart/${id}`).pipe(
+      tap(() => this.decrementTotalItems()) // atualiza o total dinamicamente
+    );
+  }
+
+  private decrementTotalItems(): void {
+    this.getTotalItemsInCart().subscribe({
+      next: currentTotal => {
+        const newTotal = Math.max(0, currentTotal.totalItemsInCart - 1); // serve para garantir que o total de itens no carrinho nunca fique negativo.
+        this.http.put(`${this._apiUrl}/totalItemsInCart`, { totalItemsInCart: newTotal }).subscribe(() => {
+          this._totalItems$.next(newTotal);
+        });
+      }
+    });
   }
 
 
