@@ -20,17 +20,13 @@ Um clone visual e funcional do site da Amazon desenvolvido com Angular, Angular 
 - [JSON Server](https://github.com/typicode/json-server)
 - [SCSS](https://sass-lang.com/)
 
-Claro! Aqui está a versão mais objetiva dessa seção:
-
----
-
 ## 🚀 Como rodar o projeto
 
 1. Clone o repositório e acesse a pasta:
 
 ```bash
-git clone https://github.com/seu-usuario/amazon-clone.git
-cd amazon-clone
+git clone https://github.com/GuilhermeSerafim/amazon-clone-pw.git
+cd amazon-clone-pw
 ```
 
 2. Instale as dependências:
@@ -42,13 +38,21 @@ npm install
 3. Inicie o mock backend:
 
 ```bash
-json-server --watch db.json --port 3000
+npx --no-install json-server db.json --port 3000
 ```
 
-4. Rode o projeto Angular:
+4. Em outro terminal, na pasta do projeto, rode o Angular:
 
 ```bash
-ng serve
+npm start
 ```
 
 > Mock endpoints disponíveis: `/users`, `/itemsCart`, `/totalItemsInCart` em `http://localhost:3000`
+
+## Contexto e limites
+
+Trabalho acadêmico de Programação Web no SENAC. A interface usa a Amazon como referência visual; os nomes e imagens de terceiros não implicam afiliação.
+
+O backend é uma simulação local com JSON Server, não uma integração com a Amazon ou um serviço de pagamentos. O manifesto declara JSON Server `^1.0.0-beta.3`; os comandos acima usam as ferramentas locais após a instalação. Execute frontend e backend em terminais separados.
+
+Os arquivos de teste do projeto podem ser executados pelo script `npm test`.
